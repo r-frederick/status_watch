@@ -9,7 +9,7 @@ defmodule StatusWatch.Application do
     # List all child processes to be supervised
     children = [
       # Starts a worker by calling: StatusWatch.Worker.start_link(arg)
-      # {StatusWatch.Worker, arg},
+      {StatusWatch.Poller, []},
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
